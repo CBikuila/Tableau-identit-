@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Les Tableaux</title>
+</head>
+<body>
+	<script>
+
+
+
+		var identite_prenom = [], // Création du tableau vide
+    	prenom,result_prenom;
+
+		while (prenom = prompt('Entrez un prénom :')) { // Si la valeur assignée à la variable « identite_prenom » est valide (différente de « null ») alors la boucle s'exécute
+    	identite_prenom.push(prenom); // Ajoute le nouveau prénom au tableau
+		}
+
+		if (identite_prenom.length > 0) { // On regarde le nombre d'items
+    	result_prenom=identite_prenom.join(' '); // Affiche les prénoms à la suite
+		} else {
+    	alert('Il n\'y a aucun prénom en mémoire !');
+		}
+    	
+    	var identite_nom = prompt('Entrez votre Nom de famille :'),identite_age=prompt('Entrez votre âge :'), identite_adresse= prompt('Entrez votre adresse :');
+
+    	function renvoie_npa(identite_nom,result_prenom,identite_age) {
+    		alert("Vous êtes "+identite_nom+(" ")+result_prenom +("\nVous avez ")+identite_age+" ans.");
+    	}
+
+    	renvoie_npa(identite_nom,result_prenom,identite_age)
+
+    	alert(("vous êtes domicilié au :"+identite_adresse));
+
+	</script>
+</body>
+</html>
+
